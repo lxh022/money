@@ -1,0 +1,85 @@
+.mine-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #f9fafb;
+  flex-direction: column;
+  .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .user-container {
+      display: flex;
+      flex-direction: column;
+      .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.26rem 0.4rem;
+        column-gap: 0.2rem;
+        .item-header {
+          width: 0.88rem;
+          height: 0.88rem;
+        }
+        .user-name {
+          font-size: 0.36rem;
+          color: #111a34;
+        }
+      }
+
+      .normal-vip {
+      }
+    }
+    .record-container {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 0.4rem;
+      .record-item-container {
+        flex: 1;
+        display: flex;
+        .record-item {
+          display: flex;
+          padding: 0.3rem;
+          margin-left: 0.7rem;
+          column-gap: 0.1rem;
+          align-items: center;
+          flex-direction: row;
+          font-size: 0.32rem;
+          color: #111a34;
+          .item-icon {
+            width: 0.48rem;
+            height: 0.48rem;
+          }
+        }
+      }
+    }
+    .item-menu {
+      display: flex;
+      margin-top: 0.2rem;
+      flex-direction: column;
+      background-color: white;
+      .item-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0.32rem 0.4rem;
+        align-items: center;
+        .item-text {
+          font-size: 0.32rem;
+          color: #111a34;
+        }
+      }
+    }
+    .line {
+      margin: 0 0.4rem;
+      height: 0.01rem;
+      background-color: #e2e4ea;
+    }
+  }
+}

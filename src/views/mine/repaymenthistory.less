@@ -1,0 +1,64 @@
+.repayment-history-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #f9fafb;
+  flex-direction: column;
+
+  .refresh {
+    height: 100%;
+    margin-top: 0.4rem;
+    overflow: auto;
+    .item-container {
+      margin: 0 0.4rem;
+      display: flex;
+      flex-direction: column;
+      .item-repayment-top {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        .item-row-top {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .repayment-date-text {
+            font-size: 0.28rem;
+            padding: 0.3rem;
+            color: #41485d;
+          }
+          .repayment-status {
+            font-size: 0.28rem;
+            padding: 0.3rem;
+            color: #41485d;
+          }
+        }
+        .item-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .item-left {
+            font-size: 0.28rem;
+            padding: 0.15rem 0.3rem;
+            color: #858b9c;
+          }
+          .item-right {
+            font-size: 0.32rem;
+            padding: 0.15rem 0.3rem;
+            color: #41485d;
+          }
+        }
+        .line {
+          margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+  .empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+  }
+}

@@ -1,0 +1,106 @@
+.loan-history-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #f9fafb;
+  flex-direction: column;
+
+  .refresh {
+    height: 100%;
+    margin-top: 0.4rem;
+    overflow: auto;
+    .item-container {
+      margin: 0 0.4rem;
+      display: flex;
+      flex-direction: column;
+      .item-loan {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        .item-row-top {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .loan-date-text {
+            font-size: 0.28rem;
+            padding: 0.3rem;
+            color: #41485d;
+          }
+          .loan-status {
+            font-size: 0.28rem;
+            padding: 0.3rem;
+            color: #41485d;
+          }
+        }
+        .item-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .item-left {
+            font-size: 0.28rem;
+            padding: 0.15rem 0.3rem;
+            color: #858b9c;
+          }
+          .item-right {
+            font-size: 0.28rem;
+            padding: 0.15rem 0.3rem;
+            color: #41485d;
+          }
+        }
+        .line {
+          margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+
+  .empty-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    .empty-top {
+      margin: 0.32rem 0.28rem;
+      background-color: white;
+      border-radius: 0.16rem;
+      display: flex;
+      flex-direction: column;
+      .top-text {
+        font-size: 0.28rem;
+        margin: 0.54rem 0 0 0.54rem;
+        color: #666f83;
+      }
+      .top-main-container {
+        display: flex;
+        flex-direction: row;
+        padding: 0.2rem 0.54rem;
+        align-items: center;
+        font-size: 0.32rem;
+        color: #111a34;
+        .top-main {
+          font-size: 0.6rem;
+          font-family: MyFont, DINAlternate;
+          color: #333;
+        }
+      }
+      .top-button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.2rem 0 0.48rem 0;
+        .top-button {
+          font-size: 0.28rem;
+        }
+      }
+    }
+    .empty-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+.van-pull-refresh__track {
+  height: auto;
+}

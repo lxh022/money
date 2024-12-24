@@ -1,0 +1,35 @@
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,figure,form,fieldset,legend,input,textarea,button,p,blockquote,th,td,pre,xmp,div{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 13.333333333vw;
+}
+
+.van-nav-bar .van-icon-arrow-left{
+  color: #333 !important;
+}
+.van-nav-bar__title{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.van-toast{
+  background: rgba(0, 0, 0, .7) !important;
+}
+
+.van-dialog__footer button {
+  border: none;
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/file/font.ttf') format('truetype'); /* 相对路径指向TTF文件 */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,321 @@
+.borrow-page {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        flex: 1;
+        overflow-y: auto;
+        padding: .62rem .4rem .3rem;
+
+        .form {
+            background: #fff;
+            border-radius: .16rem;
+            margin-bottom: .3rem;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            padding: 0.2rem 0;
+            border-bottom: 1px solid #C5CAD5;
+
+            label {
+                width: .8rem;
+                font-size: .48rem;
+                color: #111A34;
+                font-weight: bold;
+                text-align: start;
+            }
+
+            .van-field {
+                flex: 1;
+                padding: 0;
+
+                input {
+                    font-size: .6rem;
+                    font-weight: bold;
+                    font-family: MyFont, DINAlternate;
+                }
+
+                &::after {
+                    border: none;
+                }
+            }
+
+            button {
+                width: 1.3rem;
+                height: 0.5rem;
+                font-size: .28rem;
+                padding: 0;
+                color: #FF7D41;
+                text-align: end;
+                border: none;
+            }
+        }
+
+        .form-item {
+            padding: .32rem 0;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #E2E4EA;
+
+            label {
+                font-size: .32rem;
+                color: #41485D;
+            }
+
+            p {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                font-size: .32rem;
+                font-weight: 500;
+                color: #111A34;
+
+                span {
+                    display: block;
+                    width: 1rem;
+                    height: .64rem;
+                    line-height: .64rem;
+                    font-size: .28rem;
+                    border-radius: 0.32rem;
+                    text-align: center;
+                    background: #FFD8C6;
+                    color: #ffffff;
+                    margin-right: .2rem;
+                }
+
+                .van-icon {
+                    color: #D5D9E1;
+                    margin-left: 0.1rem;
+                }
+            }
+
+            .active {
+                background: #FF7D41;
+            }
+        }
+
+
+        .footer {
+            width: 6.1rem;
+            height: .96rem;
+            background: #FF5C0D;
+            box-shadow: 0 .28rem .28rem -.32rem #FF8523;
+            border-radius: .48rem;
+            border: none;
+            font-size: .36rem;
+            font-weight: bold;
+            margin-left: -3.05rem;
+            position: fixed;
+            bottom: .5rem;
+            left: 50%;
+        }
+    }
+}
+
+.borrow-msheet-content {
+    .tips {
+        font-size: .26rem;
+        background: #FFECD9;
+        color: #FF5C0D;
+        margin: 0 .3rem .3rem;
+        padding: .1rem;
+        border-radius: .14rem;
+
+        .van-icon {
+            margin-right: .1rem;
+        }
+    }
+
+    .list {
+        padding-left: .3rem;
+
+        p {
+            border-bottom: 1px solid #f5f5f5;
+            font-size: .28rem;
+            padding: .2rem .3rem .2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.agreement-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        flex: 1;
+        overflow-y: auto;
+        margin: .1rem .4rem;
+        border: 1px solid #f5f5f5;
+        border-radius: .16rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .1rem .4rem .4rem;
+
+        .tips {
+            font-size: .24rem;
+            margin-bottom: .2rem;
+
+            span {
+                color: #FF7D41;
+            }
+        }
+
+        .van-button {
+            width: 50%;
+            font-size: .24rem;
+            background: #FF7D41;
+            border: none;
+        }
+    }
+}
+
+.agreement-msheet-content {
+    min-height: 8rem;
+    display: flex;
+    flex-direction: column;
+
+    .bank {
+        display: flex;
+        align-items: center;
+        font-size: .36rem;
+        font-weight: bold;
+        margin-bottom: .3rem;
+
+        img {
+            height: .48rem;
+            display: block;
+            margin-right: .2rem;
+        }
+    }
+
+    .tips {
+        font-size: .26rem;
+        background: #FFECD9;
+        color: #FF5C0D;
+        margin: 0 .3rem .3rem;
+        padding: .1rem;
+        border-radius: .14rem;
+
+        .van-icon {
+            margin-right: .1rem;
+        }
+    }
+
+    .list {
+        padding-left: .2rem;
+
+        .van-cell-group {
+            margin: 0;
+        }
+
+        .van-field__button {
+            button {
+                background: #FF5C0D;
+                border: none;
+            }
+        }
+
+        .bank {
+            padding: .2rem .1rem;
+            font-weight: 400;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: .28rem;
+            margin: 0;
+        }
+
+        .add {
+            display: flex;
+            align-items: center;
+            font-size: .28rem;
+            padding: .2rem .1rem;
+
+            .van-icon {
+                margin-right: .2rem;
+
+                &:first-child {
+                    color: #1989fa;
+                    font-size: .4rem;
+                }
+            }
+        }
+    }
+
+    .submit {
+        margin: 2rem .4rem .4rem;
+        display: block;
+        background: #FF5C0D;
+        border: none;
+    }
+}
+
+.plan-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .head {
+        height: 2.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .6rem 0;
+        color: #ffffff;
+        background: #FF5C0D;
+
+        span {
+            font-size: .28rem;
+        }
+
+        b {
+            font-size: 1rem;
+            font-family: MyFont, DINAlternate;
+        }
+    }
+
+    .content {
+        flex: 1;
+        background: #ffffff;
+        border-radius: .2rem .2rem 0 0;
+        padding: .3rem .4rem;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-size: .32rem;
+            color: #333333;
+            margin-bottom: .2rem;
+        }
+
+        .van-col {
+            font-size: .28rem;
+            text-align: center;
+            padding: .2rem 0;
+        }
+
+        .thead {
+            background: #ccc;
+            border-radius: .2rem .2rem 0 0;
+        }
+
+        .list {
+            flex: 1;
+            overflow-y: auto;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.authentication-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  .content {
+    flex: 1;
+    overflow-y: auto;
+
+    .idcard {
+      padding: 0.25rem 0.4rem;
+
+      h3 {
+        font-size: 0.36rem;
+        color: #111a34;
+
+        span {
+          color: #ff5c0d;
+          margin-left: 0.2rem;
+        }
+      }
+
+      .tips {
+        font-size: 0.22rem;
+        color: #858b9c;
+        margin-top: 0.18rem;
+        margin-bottom: 0.28rem;
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.1rem;
+      }
+      .phone {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.6rem;
+
+        & > div {
+          width: 3.25rem;
+          height: 2.4rem;
+          background: #ffffff;
+          box-shadow: 0 0.05rem 0.2rem 0 rgba(197, 202, 213, 0.25);
+          border-radius: 0.04rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .van-uploader__input-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          img {
+            width: 1.7rem;
+            height: 1.12rem;
+            display: block;
+            margin-bottom: 0.18rem;
+          }
+
+          span {
+            font-size: 0.24rem;
+            color: #858b9c;
+          }
+        }
+      }
+
+      .demand-title {
+        font-size: 0.24rem;
+        color: #41485d;
+        margin-bottom: 0.19rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span {
+          color: #858b9c;
+        }
+      }
+
+      .demand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 1.48rem;
+            height: 0.92rem;
+            display: block;
+            margin-bottom: 0.1rem;
+          }
+
+          span {
+            color: #858b9c;
+            font-size: 0.2rem;
+          }
+        }
+      }
+
+      .step {
+        height: 1rem;
+        background: #ff7d41;
+        border: none;
+        font-size: 0.36rem;
+        font-weight: 500;
+        margin: 0.3rem 0;
+      }
+    }
+
+    .promise {
+      font-size: 0.24rem;
+      color: #858b9c;
+      text-align: center;
+    }
+  }
+}
